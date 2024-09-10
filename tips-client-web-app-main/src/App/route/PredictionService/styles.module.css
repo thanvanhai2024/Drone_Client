@@ -1,0 +1,23 @@
+.outer{
+  background-color: #17242b;
+  padding: 20px;
+
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border: 1px solid #335367;
+  background: #1e313d;
+}
+
+.ti_page {
+  font-size: 14px;
+  color: #cfdde6;
+  margin-bottom: 20px;
+  padding: 0 5px 10px 5px;
+  border-bottom: 1px solid #4a6f87;
+}

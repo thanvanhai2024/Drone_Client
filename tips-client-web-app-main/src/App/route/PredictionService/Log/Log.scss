@@ -1,0 +1,590 @@
+$background-color: #1D1D41;
+$component_color: #3E3D6D;
+$border-color-1: #6359E9;
+$border-color-2: #3E3D6D;
+$color-white: #ffffff;
+$text-color: #AEABD8;
+$button-color: #4B4B99;
+$button-border-color: #6359E9;
+$search-box-color: rgb(107 114 128);
+
+
+
+
+
+.log-table-wrapper {
+  grid-row: 5 / span 3;
+  grid-column: 1 / span 3;
+  border-color: $border-color-1;
+  position: relative;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $border-color-1;
+    border-radius: 10px;
+    height: 15%;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $background-color;
+    border-radius: 10px;
+  }
+}
+
+
+
+.log-form-text-color {
+  color: $text-color;
+}
+
+.log-form-search-box {
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.log-form-search-box-select-drone-option {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.log-from-select-box {
+  border-radius: 0.25rem;
+  width: 150px;
+  height: 30px;
+}
+
+.log-chart-graph-header {
+  color: $color-white;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.log-table-first-row {
+  justify-content: center;
+  height: 50px;
+  border-color: $border-color-1;
+  background-color: $component_color;
+  color: $color-white;
+  font-weight: 700;
+
+  vertical-align: middle;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  grid-column: auto;
+  grid-row: 1;
+  position: sticky;
+  top: 0;
+}
+
+.log-table-item {
+  position: absolute;
+  display: grid;
+  grid-auto-columns: 30px;
+}
+
+.log-table-cells {
+  grid-row: 2;
+  justify-content: space-around;
+}
+
+.log-table-cells-design {
+  color: $text-color;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  justify-content: center;
+  width : 161px;
+  height: 50px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-color: $border-color-1;
+  font-weight: 400;
+
+}
+
+.log-table-first-row-design {
+  justify-content: center;
+  width: 160px;
+}
+
+.log-table-value-data-design {
+
+  width: 160px;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  margin-top: 1rem;
+}
+
+.log-chart-graph-option-select-space {
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.log-chart-graph-option-label-space {
+  margin-right: 0.5rem;
+}
+
+.log-chart-graph-option-check-space {
+  margin-right: 1.5rem;
+  color: white;
+}
+
+.collapse-text-color {
+  color: white;
+}
+
+.ant-collapse {
+  border: 1px solid $border_color-1;
+  color: white;
+  &-header {
+    background-color: $component_color;
+    border-bottom: 1px solid $border_color-1;
+    .ant-collapse-expand-icon {
+      color: white;
+    }
+    .ant-collapse-header-text {
+      color: white;
+    }
+  }
+  &-item {
+    background-color: $component_color;
+    color: white;
+    &:not(:last-child) {
+      border-bottom: 1px solid $border_color-1;
+    }
+    &:last-child {
+      border-bottom: 0 solid $border_color-1;
+    }
+  }
+}
+.collapse-panel-custom > .ant-collapse-content {
+  width: 100%;
+  color: white;
+  background-color: $component_color;
+  border-color: $border_color-1;
+}
+
+
+.wrapper-border-radius {
+  border-radius: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container button {
+  margin-bottom: 5px;
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+// 1920 x 1080 일 때
+@media screen and (max-width: 1920px) {
+  .log-container {
+    background-color: $background-color;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 0.5em;
+    padding: 1rem;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 92%;
+  }
+  .log-form-wrapper {
+    background-color: $component_color;
+    border-color: $component_color;
+    border-radius: 0.5rem;
+    padding-left: 1.25rem;
+    padding-top: 0.25rem;
+    grid-row: 1;
+    grid-column: 1;
+    grid-column: 1 / span 3;
+    overflow: hidden;
+  }
+
+  .log-form-header-text {
+    color: $color-white;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+
+  .log-form-text-space {
+    margin-left: 1.5rem;
+  }
+
+  .log-form-search-box-design {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.25rem;
+    color: $search-box-color;
+    height: 25px;
+    width: 150px;
+  }
+
+  .log-form-search-box-design-flights {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.25rem;
+    color: $search-box-color;
+    height: 25px;
+    width: 175px;
+  }
+
+  .log-form-search-box-select-day-option {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    margin-left: 1.5rem;
+  }
+
+  .log-from-select-box-select-flight-log {
+    grid-column: 4;
+    grid-row: 1;
+    margin-left: 4.5rem;
+  }
+  .log-from-select-box-select-flight-log-option {
+    grid-column: 4;
+    grid-row: 2;
+    margin-left: 4.5rem;
+  }
+
+  .log-check-button {
+    width: 60px;
+    background-color: $button-color;
+    border-color: $button-border-color;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    color: $color-white;
+    grid-column: 5;
+    grid-row: 2;
+    margin-left: 1rem;
+  }
+
+  .log-chart-graph-wrapper {
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 2;
+    background-color: $component_color;
+    border-color: $border-color-2;
+    padding-left: 1.25rem;
+    padding-top: 0.25rem;
+    border-radius: 0.5rem;
+  }
+  .log-cart-graph{
+    width: 98%;
+    height: 250px;
+  }
+
+  .log-chart-graph-option-wrapper{
+    grid-row: 2 / span 3;
+    grid-column: 3 / span 1;
+    background-color: $component_color;
+    border-color: $border-color-2;
+    padding-left: 1.25rem;
+    padding-top: 0.35rem;
+    border-radius: 0.5rem;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $border-color-1;
+      border-radius: 10px;
+      height: 15%;
+    }
+  }
+
+  .log-chart-graph-option-select{
+    margin-top : 1rem;
+    margin-right: 1rem;
+    color : white;
+    border-color: $border-color-1;
+    background-color: $component_color;
+    border-radius: 0.5rem;
+    max-height: 279px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $border-color-1;
+      border-radius: 10px;
+      height: 15%;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+    }
+  }
+}
+
+// 2560 x 1440 일 때
+@media screen and (min-width: 1921px) {
+  .log-container {
+    background-color: $background-color;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 0.5em;
+    padding: 1rem;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 95%;
+  }
+  .log-form-wrapper {
+    background-color: $component_color;
+    border-color: $component_color;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    grid-row: 1;
+    grid-column: 1;
+    grid-column: 1 / span 3;
+    overflow: hidden;
+  }
+
+  .log-form-header-text {
+    color: $color-white;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .log-form-search-box-design {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.25rem;
+    color: $search-box-color;
+    height: 30px;
+    width: 180px;
+  }
+
+  .log-form-search-box-design-flights {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.25rem;
+    color: $search-box-color;
+    height: 30px;
+    width: 200px;
+  }
+
+
+  .log-form-search-box-select-day-option {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    //margin-left: 0.2rem;
+  }
+
+  .log-from-select-box-select-flight-log-option {
+    grid-column: 4;
+    grid-row: 2;
+    margin-left: 1rem;
+  }
+
+  .log-from-select-box-select-flight-log {
+    grid-column: 4;
+    grid-row: 1;
+    margin-left: 1rem;
+  }
+
+  .log-check-button {
+    width: 60px;
+    background-color: $button-color;
+    border-color: $button-border-color;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    color: $color-white;
+    grid-column: 5;
+    grid-row: 2;
+    margin-left: 1rem;
+  }
+
+  .log-chart-graph-wrapper {
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 2;
+    background-color: $component_color;
+    border-color: $border-color-2;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+  }
+  .log-cart-graph{
+    width: 98%;
+    height: 400px;
+  }
+
+  .log-chart-graph-option-wrapper{
+    grid-row: 2 / span 3;
+    grid-column: 3 / span 1;
+    background-color: $component_color;
+    border-color: $border-color-2;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $border-color-1;
+      border-radius: 10px;
+      height: 15%;
+    }
+  }
+
+  .log-chart-graph-option-select{
+    margin-top : 1.25rem;
+    color : white;
+    border-color: $border-color-1;
+    background-color: $component_color;
+    border-radius: 0.5rem;
+    max-height: 382px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $border-color-1;
+      border-radius: 10px;
+      height: 15%;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+    }
+  }
+}
+
+.tft{
+  .log-container {
+    border: 1px solid var(--line-line2, #1F42A9);
+    background: var(--gb-S-2, #0C1436);
+    margin: 0;
+    width: 100%;
+    height: 95%;
+    border-radius: 0;
+  }
+
+  .log-chart-graph-option-select{
+    //max-height: 382px;
+    background:var(--line-line2, #1F42A9);
+  }
+
+  .ant-collapse .ant-collapse-item:last-child >.ant-collapse-content{
+    border-radius: unset;
+  }
+
+  .log-form-wrapper
+  {
+    border: 1px solid var(--line-line3, #17317F);
+    background: var(--untitled-8, rgba(48, 100, 254, 0.08));
+  }
+
+  .log-form-header-text
+  {
+    display: flex;
+    height: 20px;
+    color: var(--Primary-p-2, #59B9FF);
+  }
+
+  .log-form-search-box-select-drone-option,
+  .log-chart-graph-wrapper,
+  .log-chart-graph-option-wrapper,
+  .ant-collapse-header,
+  .log-chart-graph-option-select
+  {
+   border: 1px solid var(--line-line, #2957DD);
+   background: var(--gb-dropbox-bg, #0E1B45);
+   color: var(--Grey-Grey-9, #F6F7F9);
+  }
+
+  .log-chart-graph-option-select::-webkit-scrollbar-thumb{
+    background-color: var(--line-line2, #12d81b);
+    border-radius: 10px;
+    height: 15%;
+  }
+
+  .log-form-search-box-design
+  {
+    border: 1px solid var(--line-line, #2957DD);
+    background: var(--gb-dropbox-bg, #0E1B45);
+    color: var(--Grey-Grey-7, #C1C7DE);
+  }
+
+  .log-form-search-box-design-flights
+  {
+    border: 1px solid var(--line-line, #2957DD);
+    background: var(--gb-dropbox-bg, #0E1B45);
+    color: var(--Grey-Grey-7, #C1C7DE);
+  }
+
+  .log-check-button
+  {
+    border: 1px solid var(--button-btn-line, #1F42A9);
+    background: var(--button-btn-bg, linear-gradient(180deg, rgba(31, 66, 169, 0.65) 0.01%, rgba(48, 100, 254, 0.65) 24.67%, rgba(48, 100, 254, 0.85) 48.67%, rgba(48, 100, 254, 0.65) 73.5%, rgba(31, 66, 169, 0.65) 100%));
+  }
+
+  .background-item
+  {
+    border-top: 1px solid var(--line-line2, #1F42A9);
+    border-right: 1px solid var(--line-line2, #1F42A9);
+    border-bottom: 1px solid var(--line-line2, #1F42A9);
+    background: var(--Gradetion-table-bg1, linear-gradient(180deg, rgba(48, 100, 254, 0.35) 0%, rgba(36, 78, 200, 0.25) 100%));
+  }
+
+  .log-table-cells-design{
+    border-right: 1px solid var(--line-line3, #17317F);
+    border-bottom: 1px solid var(--line-line3, #17317F);
+  }
+
+  border: none;
+
+  .collapse-panel-custom-tft{
+    border: none
+  }
+
+  .ant-collapse-content{
+    background: var(--line-line2, #1F42A9);
+    border: none;
+  }
+
+  .wrapper-border-radius,
+  .real-time-drone-status-total-count-table{
+    border-radius: unset;
+  }
+ 
+  .log-table-wrapper
+  {
+   &::-webkit-scrollbar-thumb{
+    background:var(--line-line2, #1F42A9);
+  }
+
+  &::-webkit-scrollbar-track{
+    border: 1px solid var(--line-line2, #1F42A9);
+    background: var(--gb-S-2, #0C1436);
+  }
+  }
+
+}

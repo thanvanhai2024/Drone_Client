@@ -1,0 +1,8 @@
+{
+  "short_name": "Drone Monitoring System",
+  "name": "Drone Monitoring System",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

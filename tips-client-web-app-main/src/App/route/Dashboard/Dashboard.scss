@@ -1,0 +1,246 @@
+$background-color: #3E3D6D;
+$component-color: #1D1D41;
+$text-color: #AEABD8;
+$axis-color: #AEABD8;
+$item-color-1: #6359E9;
+$item-color-2: #64CFF6;
+$item-color-3: #8FE388;
+$item-background-color: #8C89B4;
+
+@import url("https://fonts.googleapis.com/css2?family=Spoqa+Han+Sans+Neo:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap");
+
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --m-14: "Spoqa Han Sans Neo";
+  --font-dm-sans: "DM Sans";
+  --font-noto-sans-kr: "Noto Sans KR";
+
+  /* font sizes */
+  --m-16-size: 16px;
+  --r-12-size: 12px;
+  --font-size-lg: 18px;
+  --m-14-size: 14px;
+
+  /* Colors */
+  --gb-s-2: #0c1436;
+  --fffff: #fff;
+  --grey-grey-7: #c1c7de;
+  --grey-grey-6: #a6acc4;
+  --color-lightsteelblue-100: rgba(190, 212, 255, 0);
+  --button-btn-line: #3064fe;
+  --untitled-8: rgba(48, 100, 254, 0.08);
+  --untitled-25: rgba(48, 100, 254, 0.25);
+  --line-line3: #16317f;
+  --gb-dropbox-bg: #0e1b45;
+  --untitled-45: rgba(31, 65, 166, 0.45);
+  --grey-grey-8: #e4e6ee;
+  --grey-grey-5: #8c92ab;
+  --systemred-light: #ff3b30;
+  --grey-grey-9: #f6f7f9;
+  --primary-p-2: #58b9ff;
+  --line-line2: #1f42a9;
+  --color-mediumspringgreen: #36f097;
+  --color-crimson: #fb2047;
+  --color-orange: #ffb11a;
+  --graph-gr-4: #58e1ff;
+
+  /* Gaps */
+  --gap-xs: 12px;
+  --gap-21xl: 40px;
+  --gap-5xs: 8px;
+  --gap-9xs: 4px;
+  --gap-11xs: 2px;
+
+  /* Paddings */
+  --padding-xs: 12px;
+  --padding-5xs: 8px;
+  --padding-3xs: 10px;
+  --padding-8xl: 27px;
+  --padding-smi: 13px;
+  --padding-lg: 18px;
+  --padding-10xl: 29px;
+  --padding-23xl: 42px;
+
+  /* Border radiuses */
+  --br-71xl: 90px;
+
+  /* Effects */
+  --drop-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  --dashboard-chart-shadow-style: 5px 15px 25px rgba(0, 0, 0, 0.25);
+  --shadow-popout: 0px 6px 10px rgba(0, 0, 0, 0.55);
+}
+
+$tft-component-color: #3064FE14;
+$tft-base-textcolor: #E4E6EE;
+$tft-textcolor: #59B9FF;
+$tft-flight-bar-color: #3064FE;
+$tft-drone1-bar-color: #FB2047;
+$tft-drone2-bar-color: #FFB119;
+$tft-drone3-bar-color: #36F097;
+$tft-drone1-color: #3064FE;
+$tft-drone2-color: #3DFFDC;
+$tft-drone3-color: #995CFC;
+$tft-cal-text-color: #C1C7DE;
+$tft-cal-button-color: #8C92AB;
+
+
+.drone-color.drone1 {
+  background-color: $item-color-1;
+}
+
+.drone-color.drone2 {
+  background-color: $item-color-2;
+}
+
+.drone-color.drone3 {
+  background-color: $item-color-3;
+}
+
+.drone-color.tft.drone1 {
+  background-color: $tft-drone1-color;
+}
+
+.drone-color.tft.drone2 {
+  background-color: $tft-drone2-color;
+}
+
+.drone-color.tft.drone3 {
+  background-color: $tft-drone3-color;
+}
+
+.drone-color {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.dashboard-drone-status-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-drone-status-text-unit {
+  color: $text-color;
+}
+.dashboard-drone-status-number {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 0 10px 2.5px;
+}
+
+.dashboard-number-event-contain-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-number-event-event-num {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  padding: 0 10px;
+}
+
+
+.dashboard-number-event-text {
+  color: $text-color;
+  font-size: 1.125rem; /* 18px */
+  line-height: 2rem; /* 28px */
+}
+
+.dashboard-chart-event {
+  height: 84%;
+}
+
+.dashboard-chart-event-dronecolor-bar {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.dashboard-flight-calendar-header {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: larger;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.dashboard-flight-calendar-week {
+  color: $text-color;
+  font-size: 0.2rem;
+}
+
+.dashboard-flight-calendar-days {
+  color: #ffffff;
+  font-size: 0.2rem;
+}
+
+.dashboard-flight-calendar-month {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 0.85rem;
+}
+
+.dashboard-flight-calendar-month-btn-left {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  color: #A6A6A6;
+  transition: color 0.3s;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.dashboard-flight-calendar-month-btn-left:hover {
+  color: #808080;
+}
+.dashboard-flight-calendar-month-btn-right {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  color: #A6A6A6;
+  transition: color 0.3s;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.dashboard-flight-calendar-month-btn-right:hover {
+  color: #808080;
+}
+
+.dashboard-flight-calendar-layout-subheader {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 0.6rem;
+  font-size: 0.7rem;
+  line-height: 0.5;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.dashboard-item {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

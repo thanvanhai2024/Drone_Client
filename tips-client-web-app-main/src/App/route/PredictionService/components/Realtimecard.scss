@@ -1,0 +1,34 @@
+$color_1: #AEABD8;
+$color_2: #8FE388;
+$color_3: yellow;
+$background-color_1: #3E3D6D;
+
+#realtimecard {
+    background-color: $background-color_1;
+}
+#cardtitle {
+    margin: 20px;
+    color: $color_1;
+    text-align: left;
+    font-size: small;
+}
+#normalnumber {
+    color: $color_2;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+    margin: 10px;
+}
+#abnormalnumber {
+    color: $color_3;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin: 10px;
+}
+#cardRange {
+    color: $color_1;
+    text-align: center;
+}

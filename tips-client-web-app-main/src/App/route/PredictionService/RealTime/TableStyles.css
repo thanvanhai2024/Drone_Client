@@ -1,0 +1,32 @@
+/*::-webkit-scrollbar : 스크롤바 전체*/
+/*::-webkit-scrollbar-thumb : 드래그 가능한 스크롤 핸들 막대*/
+/*::-webkit-scrollbar-track : 스크롤바 트랙 (스크롤이 움직이는 영역 / 스크롤 진행률 표시줄)*/
+/*::-webkit-scrollbar-button : 스크롤바의 방향 버튼 (= 위/아래 표시 화살표)*/
+/*::-webkit-scrollbar-track-piece : 스크롤 진행률 표시줄에서 스크롤 핸들 막대 부분을 제외한 남은 빈 공간*/
+/*::-webkit-scrollbar-corner : 수평/수직 스크롤 막대가 만나는 스크롤 막대의 하단 모서리*/
+/*::-webkit-resizer : 요소의 하단 모서리에 나타나는 크기 조정 핸들*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: #3e3d6d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6359e9;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #3e3d6d;
+}
+
+/* 테이블 헤더 상당 고정 */
+#predict-table thead {
+    position: sticky;
+    top: 0px;
+}

@@ -1,0 +1,91 @@
+.stream-main-wrapper {
+  min-height: 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+//@media screen and (min-width: 1921px) {
+//  .stream-main-wrapper {
+//    grid-template-rows: repeat(10, 100px);
+//  }
+//}
+
+.real-time-left-side {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  border-radius: 0.5rem;
+}
+
+.real-time-header-action {
+  grid-column: 2 / span 3;
+  grid-row: 1 / 2 ;
+  border-radius: 0.5rem;
+}
+
+.real-time-main-view {
+  grid-column: 2 / span 3;
+  grid-row: 2 / -1;
+  border-radius: 0.5rem;
+}
+
+.add-drone-video-button {
+  background-color: #AEABD8;
+  color : #FFFFFF;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  width: 90%;
+  font-size: 15px;
+  border-radius: 0.25rem;
+}
+
+.local-gaion-button {
+  background-color: #1d1d41;
+  color : #FFFFFF;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  width: 90%;
+  font-size: 15px;
+  border-radius: 0.25rem;
+}
+
+.add-samtti-button {
+  background-color: #6359e9;
+  color : #FFFFFF;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  width: 90%;
+  font-size: 15px;
+  border-radius: 0.25rem;
+}
+
+.real-blur-button {
+  background-color: #1d1d41;
+  color : #6359e9;
+  border-color: #6359e9;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  width: 90%;
+  font-size: 15px;
+  border-radius: 0.25rem;
+}
+
+.tft{
+  .button-background{
+    border-image: linear-gradient(180deg,rgba(0, 163, 255, 1),rgba(187, 230, 255, 1),rgba(0, 163, 255, 1)) 30%;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-style: solid;
+    background: var(--button-btn_bg, linear-gradient(180deg,rgba(0, 163, 255, 0.65),rgba(0, 163, 255, 0.45),rgba(0, 163, 255, 0.35),rgba(0, 163, 255, 0.45),rgba(0, 163, 255, 0.65) ));
+  }
+
+  .real-time-left-side,
+  .real-time-header-action,
+  .real-time-main-view{
+    border-radius: 0;
+  }
+}
+
+.realtime-stream-wrapper {
+  border-radius: 10px;
+  background-color: #1D1D41;
+}

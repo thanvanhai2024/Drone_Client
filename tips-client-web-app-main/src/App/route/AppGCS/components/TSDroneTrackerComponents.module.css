@@ -1,0 +1,231 @@
+.control_outer {
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-bottom: none;
+    border-radius: 30px 30px 0 0;
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.control_drone {
+    float: left;
+    width: 190px;
+    height: 210px;
+    border: 1px solid #1D1D41;
+    border-radius: 30px 30px 0 0;
+    background: #27264E;
+}
+
+.control_camera {
+    float: left;
+    width: 300px;
+    height: 210px;
+    border: 1px solid #1D1D41;
+    border-radius: 30px 30px 0 0;
+    background: #27264E;
+}
+
+.title {
+    /*font-size: 18px;*/
+    color: #c9c9c9;
+    padding: 12px 0;
+    text-align: center;
+}
+
+/* controller circle */
+.circle_out_drone,
+.circle_out_camera {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #1f2126;
+    background-image: linear-gradient(150deg,
+    rgba(96.71694979071617, 93.3640743046999, 141.64585292339325, 1) 0%,
+    rgba(46.116092428565025, 43.2159436494112, 117.27387472987175, 1) 35%);
+}
+
+.circle_out_camera2 {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #1f2126;
+    background-image: linear-gradient(150deg,
+    rgba(96.71694979071617, 93.3640743046999, 141.64585292339325, 1) 0%,
+    rgba(46.116092428565025, 43.2159436494112, 117.27387472987175, 1) 35%);
+}
+
+.controllerCol {
+    position: absolute;
+    width: 46px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #4b4b99;
+}
+
+.controllerRow {
+    position: absolute;
+    width: 130px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: #4b4b99;
+}
+
+.circle_in_r {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: #444444;
+    background-image: linear-gradient(180deg,
+    rgba(96.71694979071617, 93.3640743046999, 141.64585292339325, 1) 0%,
+    rgba(46.116092428565025, 43.2159436494112, 117.27387472987175, 1) 35%);
+}
+
+.circle_in_l {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: #444444;
+    background-image: linear-gradient(180deg,
+    rgba(96.71694979071617, 93.3640743046999, 141.64585292339325, 1) 0%,
+    rgba(46.116092428565025, 43.2159436494112, 117.27387472987175, 1) 35%);
+}
+
+.circle_in_u {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: #444444;
+    background-image: linear-gradient(180deg,
+    rgba(96.71694979071617, 93.3640743046999, 141.64585292339325, 1) 0%,
+    rgba(46.116092428565025, 43.2159436494112, 117.27387472987175, 1) 35%);
+}
+
+.circle_in_d {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: #444444;
+    background-image: linear-gradient(0deg,
+    rgba(96.71694979071617, 93.3640743046999, 141.64585292339325, 1) 0%,
+    rgba(46.116092428565025, 43.2159436494112, 117.27387472987175, 1) 35%);
+}
+
+
+/*.circle_in {*/
+/*  position: absolute;*/
+/*  top: 50px;*/
+/*  left: 50px;*/
+/*  width: 50px;*/
+/*  height: 50px;*/
+/*  border-radius: 50%;*/
+/*  background: linear-gradient(#535353, #313131);*/
+/*}*/
+
+.circle_out_drone button {
+    color: #2a949d;
+    /*font-size: 24px;*/
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.circle_out_drone button:hover {
+    color: #00ffff;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.circle_out_camera button {
+    /*color: #bd5d3c;*/
+    /*font-size: 24px;*/
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.circle_out_camera button:hover {
+    /*color: #fc885f;*/
+    /*font-size: 24px;*/
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.circle_out_drone button.btn_top,
+.circle_out_camera button.btn_top {
+
+}
+
+.circle_out_drone button.btn_bottom,
+.circle_out_camera button.btn_bottom {
+
+}
+
+.circle_out_drone button.btn_right,
+.circle_out_camera button.btn_right {
+
+}
+
+.circle_out_drone button.btn_left,
+.circle_out_camera button.btn_left {
+
+}
+
+.control_btn {
+    background-image: linear-gradient(180deg,
+    rgba(96.71694979071617, 93.3640743046999, 141.64585292339325, 1) 0%,
+    rgba(46.116092428565025, 43.2159436494112, 117.27387472987175, 1) 35%);
+}
+
+.control_btn:hover {
+    background-color: white
+}
+
+
+.btn_fb_outer {
+    float: left;
+    width: 90px;
+    height: 150px;
+    margin-left: 40px;
+}
+
+.btn_fb_outer button {
+    color: #2da3a3;
+    font-size: 18px;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #626262;
+    background: linear-gradient(#535353, #313131);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.btn_fb_outer button:hover {
+    color: #00ffff;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.btn_fb_outer button.btn_front {
+    margin-top: 20px;
+}
+
+.btn_fb_outer button.btn_back {
+    margin-top: 18px;
+}

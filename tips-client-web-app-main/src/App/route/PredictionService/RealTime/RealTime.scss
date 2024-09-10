@@ -1,0 +1,660 @@
+$component-background-color: #1D1D41;
+$component_color: #3E3D6D;
+
+$sensor-box-component_color: #3E3D6D;
+$sensor-box-text-color: #8C89B4;
+
+$border-color: #6359E9;
+$table-header-color: #6359E9;
+$table-contents-color: #1D1D41;
+
+$color-white: #ffffff;
+$text-color: #AEABD8;
+
+$graph-line-color: #64CFF6;
+$graph-text-color: #949494;
+
+$warning-color: #FF1053;
+$normal-color: #8FE388;
+
+.tft {
+  .real-time-page-wrapper {
+    grid-template-columns: repeat(7, 0.8fr);
+    grid-template-rows: repeat(9, 0.3fr);
+    margin: 0.5em;
+    padding: 0;
+    width: 99%;
+    height: 100%;
+  }
+}
+
+
+
+.tips {
+  .real-time-page-wrapper {
+    grid-template-columns: repeat(7, 0.8fr);
+    grid-template-rows: repeat(9, 0.3fr);
+    margin: 0.5em;
+    padding: 0;
+    width: 99%;
+    height: 100%;
+  }
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+
+  padding: 10px;
+
+  @media (min-width: 2560px) {
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+
+.real-time-drone-header {
+  color: $color-white;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+
+.real-time-drone-button-design {
+  border-radius: 0.375rem;
+  width: 50%;
+  padding: 0.3em;
+  color: $color-white;
+  font-size: 15px;
+  background-color: $component_color;
+}
+.real-time-drone-status {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 3;
+  background-color: $component-background-color;
+  border-color: $component-background-color;
+}
+
+.real-time-drone-status-wrapper {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  position: relative;
+  overflow: auto;
+}
+
+.real-time-drone-status-total-count {
+  grid-column: 1;
+  grid-row: 2 / span 4;
+  margin-right: 1.2em;
+  margin-top: 1em;
+}
+
+.real-time-drone-status-sensor-count {
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 4;
+  margin-right: 2.5em;
+  margin-top: 1em;
+}
+
+
+// 1920 x 1080 일 때
+@media screen and (max-width: 1920px) {
+
+  .tips {
+    .real-time-drone-box-contents-position {
+      height: 100%;
+      //height: 133px;
+      width: 100%;
+      background-color: $component_color;
+      justify-content: space-around;
+      margin-right: 1rem;
+      border-radius: 0.375rem;
+      position: relative;
+    }
+  }
+
+
+  .tft {
+    .real-time-drone-box-contents-position {
+      height: 100%;
+      //height: 100px;
+      width: 100%;
+      background-color: $component_color;
+      justify-content: space-around;
+      margin-right: 1rem;
+      border-radius: 0.375rem;
+      position: relative;
+    }
+  }
+  .real-time-drone-button {
+    //grid-column: 1;
+    //grid-row: 1;
+    margin: 1.3em;
+    border: $color-white;
+    width: 10%;
+  }
+
+  .real-time-drone-button-design {
+    border-radius: 0.375rem;
+    width: 75%;
+    padding: 0.3em;
+    color: $color-white;
+    font-size: 15px;
+    background-color: $component_color;
+  }
+
+  .real-time-drone-status-total-count-table {
+    display: grid;
+    margin-right: 5em;
+    margin-left: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: $color-white;
+    font-size: medium;
+    text-align: center;
+    height: 140px;
+    border-radius: 0.5rem;
+  }
+
+  .real-time-drone-status-total-sensor-table {
+    display: grid;
+    margin-right: 5em;
+    margin-left: 1em;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: $color-white;
+    font-size: medium;
+    text-align: center;
+    height: 140px;
+    border-radius: 0.5rem;
+  }
+
+  .real-time-drone-box-contents {
+    height: 100%;
+    //height: 160px;
+    width: 100%;
+    background-color: $component_color;
+    justify-content: space-around;
+    margin-right: 1rem;
+    border-radius: 0.375rem;
+    position: relative;
+  }
+
+  .real-time-drone-box-contents-range {
+    font-size: 0.9rem;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .real-time-drone-box-contents-range-position {
+    font-size: 0.9rem;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+}
+
+// 2560 x 1440 일 때
+@media screen and (min-width: 1921px) {
+  .real-time-drone-button {
+    //grid-column: 1;
+    //grid-row: 1;
+    margin: 2.2em;
+    border: $color-white;
+    width: 10%;
+  }
+
+  .real-time-drone-button-design {
+    border-radius: 0.375rem;
+    width: 50%;
+    padding: 0.3em;
+    color: $color-white;
+    font-size: 15px;
+    background-color: $component_color;
+  }
+
+  .real-time-drone-status-total-count-table {
+    display: grid;
+    margin-right: 5em;
+    margin-left: 1em;
+    margin-top: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: $color-white;
+    font-size: medium;
+    text-align: center;
+    height: 200px;
+    border-radius: 0.5rem;
+  }
+
+  .real-time-drone-status-total-sensor-table {
+    display: grid;
+    margin-right: 5em;
+    margin-left: 1em;
+    margin-top: 1em;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: $color-white;
+    font-size: medium;
+    text-align: center;
+    height: 200px;
+    border-radius: 0.5rem;
+  }
+  .real-time-drone-box-contents-position {
+    height: 100%;
+    width: 100%;
+    background-color: $component_color;
+    justify-content: space-around;
+    margin-right: 1rem;
+    border-radius: 0.375rem;
+    position: relative;
+  }
+  .real-time-drone-box-contents {
+    height: 100%;
+    width: 100%;
+    background-color: $component_color;
+    justify-content: space-around;
+    margin-right: 1rem;
+    border-radius: 0.375rem;
+    position: relative;
+  }
+
+  .real-time-drone-box-contents-range {
+    font-size: 0.9rem;
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .real-time-drone-box-contents-range-position {
+    font-size: 0.9rem;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.table-design {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.table-design-top-left {
+  border-top-left-radius: 0.5rem;
+}
+
+.table-design-top-right {
+  border-top-right-radius: 0.5rem;
+}
+
+.table-design-bottom-left {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.table-design-bottom-right {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.table-border {
+  border: 0.05rem solid $border-color;
+}
+
+.table-bottom-side {
+  border-left: 0.05rem solid $border-color;
+  border-right: 0.05rem solid $border-color;
+}
+
+.real-time-drone-status-table-title {
+  grid-row: 1;
+  grid-column: span 3;
+  padding-top: 1em;
+  padding-left: 0.3em;
+  background-color: $component_color;
+  border-bottom: 0.05rem solid $border-color;
+}
+
+.real-time-drone-status-table-subtitle {
+  grid-row: 2;
+  padding-top: 1em;
+  padding-left: 0.3em;
+  background-color: $component_color;
+  border-bottom: 0.05rem solid $border-color;
+}
+
+.real-time-drone-status-table-value {
+  grid-row: 3;
+  padding-top: 1em;
+  padding-left: 0.3em;
+  background-color: $component-background-color;
+}
+
+.real-time-drone-table-title {
+  justify-content: center;
+  height: 50px;
+  background-color: $component_color;
+  color: $component_color;
+  font-weight: 700;
+  vertical-align: middle;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  grid-row: 1;
+}
+
+.real-time-drone-height {
+  grid-column: 5 / span 3;
+  grid-row: 1 / span 3;
+  background-color: $component-background-color;
+  border-color: $component-background-color;
+}
+
+.real-time-drone-position {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 6;
+  background-color: $component-background-color;
+  border-color: $component-background-color;
+  color: $sensor-box-text-color;
+  font-size: 18px;
+}
+
+.real-time-drone-position-wrapper {
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.real-time-drone-position-top {
+  grid-row: 2 / span 3;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.real-time-drone-position-middle {
+  grid-row: 5 / span 3;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.real-time-drone-position-bottom {
+  grid-row: 8 / span 3;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.real-time-drone-sensor-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.real-time-drone-sensor-contents-left {
+  grid-column: 1;
+  grid-row: 2 / span 3;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.real-time-drone-sensor-contents-center {
+  grid-column: 2;
+  grid-row: 2 / span 3;
+  margin-right: 1em;
+}
+
+.real-time-drone-sensor-contents-right {
+  grid-column: 3;
+  grid-row: 2 / span 3;
+  margin-right: 1em;
+}
+
+
+.real-time-drone-gyro-sensor {
+  grid-column: 2 / span 3;
+  grid-row: 4 / span 3;
+  background-color: $component-background-color;
+  border-color: $component-background-color;
+  color: $sensor-box-text-color;
+  font-size: 18px;
+}
+
+.real-time-drone-acc-sensor {
+  grid-column: 5 / span 3;
+  grid-row: 4 / span 3;
+  background-color: $component-background-color;
+  border-color: $component-background-color;
+  color: $sensor-box-text-color;
+  font-size: 18px;
+}
+
+.real-time-drone-mag-sensor {
+  grid-column: 2 / span 3;
+  grid-row: 7 / span 3;
+  background-color: $component-background-color;
+  border-color: $component-background-color;
+  color: $sensor-box-text-color;
+  font-size: 18px;
+}
+
+.real-time-drone-vib-sensor {
+  grid-column: 5 / span 3;
+  grid-row: 7 / span 3;
+  background-color: $component-background-color;
+  border-color: $component-background-color;
+  color: $sensor-box-text-color;
+  font-size: 18px;
+}
+
+.real-time-drone-box {
+  width: 100%;
+  height: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.real-time-drone-box-contents-title {
+  grid-row: 2;
+  margin-left: 1rem;
+  position: absolute;
+  top: 10%
+}
+
+.real-time-drone-box-contents-value {
+  font-weight: 800;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.border-left {
+  border-left: 0.05rem solid $border-color;
+}
+
+.tft {
+  .real-time-drone
+  {
+   border: 1px solid var(--line-line2, #1F42A9);
+   background: var(--gb-S-2, #0C1436);
+  }
+
+  .real-time-drone-status,
+  .real-time-drone-height,
+  .real-time-drone-position,
+  .real-time-drone-gyro-sensor,
+  .real-time-drone-acc-sensor,
+  .real-time-drone-mag-sensor,
+  .real-time-drone-vib-sensor
+  {
+    border: 1px solid var(--line-line3, #17317F);
+    background: var(--untitled-8, rgba(48, 100, 254, 0.08));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .real-time-drone-status-table-title,
+  .real-time-drone-status-table-subtitle,
+  .real-time-drone-button-design
+  {
+    background: var(--Gradetion-table-bg2, linear-gradient(180deg, rgba(48, 100, 254, 0.20) 0%, rgba(36, 78, 200, 0.10) 100%));
+    border: 1px solid var(--line-line3, #17317F);
+    border-radius: unset;
+  }
+
+  .real-time-drone-status-table-value
+  {
+    background: var(--gb-S-2, #0C1436);
+    border: 1px solid var(--line-line3, #17317F);
+  }
+
+  .real-time-drone-box-contents-position,
+  .real-time-drone-box-contents
+  {
+    border: 1px solid var(--line-line3, #17317F);
+    background: var(--untitled-8, rgba(48, 100, 254, 0.08));
+  }
+
+  .table-border
+  {
+    border: 1px solid var(--line-line3, #17317F);
+  }
+
+  .popup-btn{
+    border-radius: var(--Size-Base-sizeXXS, 4px);
+    background: var(--gb-S-2, #0C1436);
+    color:#999
+  }
+
+  .real-time-drone-box-contents-range-position,
+  .real-time-drone-box-contents-range{
+    color: var(--gb-S-5, #BED4FF)
+  }
+
+  .real-time-drone-status-wrapper,
+  .table-design-bottom-right,
+  .table-design-bottom-left,
+  .table-design-top-right,
+  .table-design-top-left,
+  .real-time-drone-status-total-sensor-table,
+  .real-time-drone-box-contents-position,
+  .real-time-drone-box-contents,
+  .log-chart-graph-option-wrapper,
+  .log-form-search-box-design,
+  .log-form-search-box-design-flights,
+  .log-check-button,
+  .prediction-form-search-box-design,
+  .prediction-check-button,
+  .prediction-graph-option-wrapper{
+    border-radius: 0;
+  }
+
+  @media screen and (min-width: 1921px) {
+
+    .real-time-drone {
+      height: 95%;
+      overflow-y: hidden;
+    }
+    .real-time-drone {
+      margin: 0;
+      width: 100%;
+      height: 95%;
+      border-radius: 0;
+    }
+
+    .real-time-drone-position,
+    .real-time-drone-gyro-sensor,
+    .real-time-drone-acc-sensor,
+    .real-time-drone-mag-sensor,
+    .real-time-drone-vib-sensor{
+      height: 87%;
+    }
+
+    .real-time-drone-box-contents-position {
+      height: 180px;
+      margin-bottom: 35px;
+    }
+
+    .real-time-drone-position-top,
+    .real-time-drone-position-middle,
+    .real-time-drone-position-bottom,
+    .real-time-drone-position-wrapper{
+      height: 80%;
+    }
+
+    .real-time-drone-mag-sensor,
+    .real-time-drone-vib-sensor{
+      margin-top: -50px;
+    }
+    .vector-alt {
+      width: 100%;
+      margin-bottom: -15px;
+      margin-top: -20px;
+    }
+    .sensor-line-left {
+      margin-left: 115px;
+    }
+
+    .sensor-line-right{
+      margin-right: 100px;
+    }
+
+    .pos-sensor {
+      margin-top: -20px;
+    }
+
+    .pos-gap {
+      margin-top: -2px;
+    }
+
+    .vector-page.vector-status {
+      width: 100%;
+      margin-top: 55px;
+      margin-left: -100px;
+    }
+  }
+}
+
+.vector-pos-sensor {
+  width: 100%;
+  margin-top: -8px;
+  margin-bottom: 4px;
+}
+
+.vector-alt {
+  width: 100%;
+  margin-bottom: -15px;
+  margin-top: -5px;
+}
+
+
+
+.vector-page.vector-status {
+  width: 100%;
+  margin-top: 40px;
+}
+.absolute {
+  position: absolute;
+}
+
+.vector-page.vector-sensor {
+  width: 30%;
+  margin-top: 32px;
+  margin-bottom: 15px;
+}
+

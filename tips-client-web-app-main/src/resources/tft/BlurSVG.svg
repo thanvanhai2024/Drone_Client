@@ -1,0 +1,30 @@
+<svg width="292" height="9" viewBox="0 0 292 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="path-1-inside-1_1536_437" fill="white">
+    <path d="M0 0H300V4H0V0Z"/>
+  </mask>
+  <path d="M300 4V5H301V4H300ZM299 0V4H301V0H299ZM300 3H0V5H300V3Z" fill="url(#paint0_linear_1536_437)"
+        mask="url(#path-1-inside-1_1536_437)"/>
+  <path style="mix-blend-mode:color-dodge"
+        d="M146 0.0960024C65.3664 0.0959655 1.03556e-07 1.8868 6.67122e-08 4.09594C2.98681e-08 6.30507 65.3664 8.09597 146 8.096C226.634 8.09604 292 6.30521 292 4.09607C292 1.88693 226.634 0.0960394 146 0.0960024Z"
+        fill="url(#paint1_radial_1536_437)"/>
+  <defs>
+    <linearGradient id="paint0_linear_1536_437" x1="6.02007" y1="2" x2="292.854" y2="-11.3782"
+                    gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BED4FF" stop-opacity="0"/>
+      <stop offset="0.517361" stop-color="#4673F9" stop-opacity="0.604167"/>
+      <stop offset="1" stop-color="#BED4FF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial_1536_437" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(155.134 4.14274) rotate(-180) scale(145.099 4.00182)">
+      <stop stop-color="#33BAFF"/>
+      <stop offset="0.07" stop-color="#2CA2DE"/>
+      <stop offset="0.22" stop-color="#2077A4"/>
+      <stop offset="0.36" stop-color="#165372"/>
+      <stop offset="0.5" stop-color="#0E3549"/>
+      <stop offset="0.64" stop-color="#081E29"/>
+      <stop offset="0.77" stop-color="#030D12"/>
+      <stop offset="0.89" stop-color="#000304"/>
+      <stop offset="1"/>
+    </radialGradient>
+  </defs>
+</svg>
